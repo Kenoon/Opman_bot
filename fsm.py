@@ -13,7 +13,7 @@ class TocMachine(GraphMachine):
     def is_going_to_state1(self, event):
         if event.get("message"):
             text = event['message']['text']
-            return text.lower() == 'Good morning'
+            return text.lower() == 'go to state1'
         return False
 
     def is_going_to_state2(self, event):
@@ -42,7 +42,7 @@ class TocMachine(GraphMachine):
         print("I'm entering state1")
 
         sender_id = event['sender']['id']
-        responese = send_text_message(sender_id, "Good morning")
+        responese = send_text_message(sender_id, "I'm entering state1")
 
     def on_enter_state2(self, event):
         print("I'm entering state2")
