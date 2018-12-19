@@ -27,4 +27,4 @@ Every time user state is triggered to advance to another state, and if it is tri
 
 * State1,2,3
     * Input: "go to state4"
-        * Reply: "I'm entering state3"
+        * Reply: "I'm entering state4"
